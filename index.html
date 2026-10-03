@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enchanted Groves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="18" r="14" fill="var(--math-3)"/><circle cx="12" cy="14" r="8" fill="var(--math)"/><circle cx="22" cy="15" r="7" fill="var(--math-2)"/><circle cx="17" cy="23" r="7" fill="var(--math)"/><circle cx="27" cy="6" r="2.5" fill="var(--glow)"/></svg>
+      Enchanted Groves
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#realm">Realm map</a>
+      <a href="#how">How it works</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Every idea has <em>roots</em>.<br>Every idea grows <span class="b">branches</span>.</h1>
+    <p class="lede">Tell us a math concept. We'll put it at the center of the grove, with what to learn before it on one side and where it leads on the other.</p>
+
+    <form class="ask" id="ask" novalidate>
+      <label for="concept" class="ask-label">What math concept are you curious about?</label>
+      <div class="ask-row">
+        <input id="concept" name="concept" list="concepts" placeholder="Vectors, derivatives, dot product…" autocomplete="off">
+        <button type="submit" class="go">Take me there</button>
+      </div>
+      <datalist id="concepts"></datalist>
+      <fieldset class="modes">
+        <legend class="sr">Why are you here?</legend>
+        <label><input type="radio" name="mode" value="roots" checked><span>I want to learn it</span></label>
+        <label><input type="radio" name="mode" value="branches"><span>I already learned it</span></label>
+      </fieldset>
+      <p class="note" id="note" aria-live="polite"></p>
+      <div class="try">
+        <span class="label">Try</span>
+        <button type="button" class="chip" data-try="Vectors">Vectors</button>
+        <button type="button" class="chip" data-try="Derivatives">Derivatives</button>
+        <button type="button" class="chip" data-try="Dot product">Dot product</button>
+        <button type="button" class="chip" data-try="Probability">Probability</button>
+        <button type="button" class="chip" data-try="Eigenvectors">Eigenvectors</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="realm">
+    <div class="sec-head">
+      <div>
+        <h2>The realm</h2>
+        <p>Each field of study is its own forest, seen from above. Trails connect the forests where ideas from one field lead into another.</p>
+      </div>
+    </div>
+    <div class="realm" id="realmBox">
+      <div class="realm-scroll"><svg id="realmSvg" viewBox="0 0 960 420" role="img" aria-label="Map of forests: Mathematics and Computer Science, connected by trails"></svg></div>
+      <div class="realm-foot">
+        <span class="key"><i style="background:var(--math)"></i>Mathematics · open</span>
+        <span class="key"><i style="background:var(--cs)"></i>Computer Science · sprouting</span>
+        <span>Click the math forest to pick a concept.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="sec-head"><div><h2>How the realm is built</h2></div></div>
+    <div class="how">
+      <div><b>Forests</b><p>One per field. Each has its own tree color, so you can tell them apart from above.</p></div>
+      <div><b>Trees</b><p>Big concepts like Vectors or Derivatives. These are the nodes you travel between.</p></div>
+      <div><b>Shrubs</b><p>Smaller ideas that belong to a tree, like vector addition or the dot product.</p></div>
+      <div><b>Paths</b><p>Directed links between trees. Walk them backward for prerequisites, forward for what's next. A tree can have many of each.</p></div>
+    </div>
+<pre><span class="cm">// math_nodes.json</span>
+{ "id": "vectors",         "label": "Vectors",         "forest": "math", "kind": "tree" }
+{ "id": "vector-addition", "label": "Vector addition", "forest": "math", "kind": "shrub", "parent": "vectors" }
+
+<span class="cm">// math_edges.json  (from = learn first, to = unlocked next)</span>
+{ "from": "trigonometry", "to": "vectors" }
+{ "from": "vectors",      "to": "matrices" }
+{ "from": "matrices",     "to": "cs:graphics" }  <span class="cm">// links can cross into another forest</span></pre>
+  </section>
+
+  <footer>Enchanted Groves · a GirlHacks 2026 project · Whimsical Wonders</footer>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

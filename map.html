@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathematics Grove · Enchanted Groves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="map-page">
+  <header class="top map-top">
+    <a class="brand" href="index.html" title="Back to the start">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="18" r="14" fill="var(--math-3)"/><circle cx="12" cy="14" r="8" fill="var(--math)"/><circle cx="22" cy="15" r="7" fill="var(--math-2)"/><circle cx="17" cy="23" r="7" fill="var(--math)"/><circle cx="27" cy="6" r="2.5" fill="var(--glow)"/></svg>
+      Enchanted Groves
+    </a>
+    <span class="crumb label">Mathematics grove</span>
+    <div class="tools">
+      <form class="search" id="find" novalidate>
+        <svg viewBox="0 0 16 16" fill="none" stroke-width="2" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5" stroke-linecap="round"/></svg>
+        <input id="q" list="concepts" placeholder="Find another concept…" autocomplete="off" aria-label="Find another concept">
+      </form>
+      <datalist id="concepts"></datalist>
+      <div class="seg" role="group" aria-label="What do you want to see?">
+        <button type="button" data-mode="roots" aria-pressed="true">Learn first</button>
+        <button type="button" data-mode="branches" aria-pressed="false">Learn next</button>
+      </div>
+    </div>
+  </header>
+  <p class="note map-note" id="note" aria-live="polite"></p>
+
+  <main class="app">
+    <div class="stage" id="stage">
+      <span class="side side-l" id="sideL">← Roots: learn these first</span>
+      <span class="side side-r" id="sideR">Branches: learn these next →</span>
+      <svg id="groveSvg" role="group" aria-label="Concept map centered on the selected concept"></svg>
+      <div class="maplegend" aria-label="Legend">
+        <span class="lg-group" id="legendFirst">
+          <span><svg viewBox="0 0 38 12" aria-hidden="true"><path d="M2 6H28" stroke="var(--roots)" stroke-width="3"/><path d="M27 1.5L36 6L27 10.5Z" fill="var(--roots)"/></svg>Required</span>
+          <span><svg viewBox="0 0 38 12" aria-hidden="true"><path d="M2 6H26" stroke="var(--roots)" stroke-width="3.5" stroke-dasharray=".5 6" stroke-linecap="round"/><path d="M27 1.5L36 6L27 10.5Z" fill="var(--surface)" stroke="var(--roots)" stroke-width="1.6" stroke-linejoin="round"/></svg>Good to have</span>
+        </span>
+        <span class="lg-group" id="legendNext" hidden>
+          <span><svg viewBox="0 0 38 12" aria-hidden="true"><path d="M2 6H28" stroke="var(--branches)" stroke-width="3"/><path d="M27 1.5L36 6L27 10.5Z" fill="var(--branches)"/></svg>Leads to</span>
+        </span>
+        <span class="hint-t">Hover a tree for its links · drag to explore</span>
+      </div>
+      <div class="zoom">
+        <button type="button" id="zoomIn" aria-label="Zoom in">+</button>
+        <button type="button" id="zoomOut" aria-label="Zoom out">−</button>
+        <button type="button" id="recenter">Center</button>
+      </div>
+    </div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </main>
+
+<script src="js/data.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

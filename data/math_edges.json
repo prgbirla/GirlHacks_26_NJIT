@@ -1,0 +1,512 @@
+[
+  {
+    "from": "fractions_decimals",
+    "to": "ratios_proportions",
+    "type": "requires"
+  },
+  {
+    "from": "fractions_decimals",
+    "to": "linear_equations",
+    "type": "requires"
+  },
+  {
+    "from": "fractions_decimals",
+    "to": "statistics",
+    "type": "requires"
+  },
+  {
+    "from": "fractions_decimals",
+    "to": "probability",
+    "type": "requires"
+  },
+  {
+    "from": "fractions_decimals",
+    "to": "exponents_roots",
+    "type": "helpful"
+  },
+  {
+    "from": "exponents_roots",
+    "to": "order_of_operations",
+    "type": "helpful"
+  },
+  {
+    "from": "variables_expressions",
+    "to": "linear_equations",
+    "type": "requires"
+  },
+  {
+    "from": "variables_expressions",
+    "to": "functions",
+    "type": "requires"
+  },
+  {
+    "from": "variables_expressions",
+    "to": "polynomials",
+    "type": "requires"
+  },
+  {
+    "from": "variables_expressions",
+    "to": "sequences_series",
+    "type": "requires"
+  },
+  {
+    "from": "sets_logic",
+    "to": "functions",
+    "type": "helpful"
+  },
+  {
+    "from": "sets_venn",
+    "to": "probability",
+    "type": "helpful"
+  },
+  {
+    "from": "mathematical_proof",
+    "to": "triangle_congruence",
+    "type": "helpful"
+  },
+  {
+    "from": "functions",
+    "to": "linear_functions",
+    "type": "requires"
+  },
+  {
+    "from": "linear_equations",
+    "to": "linear_functions",
+    "type": "requires"
+  },
+  {
+    "from": "proportional_relationships",
+    "to": "slope",
+    "type": "requires"
+  },
+  {
+    "from": "linear_functions",
+    "to": "systems_of_equations",
+    "type": "requires"
+  },
+  {
+    "from": "linear_equations",
+    "to": "systems_of_equations",
+    "type": "requires"
+  },
+  {
+    "from": "exponents_roots",
+    "to": "polynomials",
+    "type": "requires"
+  },
+  {
+    "from": "polynomials",
+    "to": "quadratic_functions",
+    "type": "requires"
+  },
+  {
+    "from": "functions",
+    "to": "quadratic_functions",
+    "type": "requires"
+  },
+  {
+    "from": "square_roots_radicals",
+    "to": "quadratic_formula",
+    "type": "requires"
+  },
+  {
+    "from": "function_transformations",
+    "to": "parabolas",
+    "type": "helpful"
+  },
+  {
+    "from": "functions",
+    "to": "exponential_functions",
+    "type": "requires"
+  },
+  {
+    "from": "exponent_rules",
+    "to": "exponential_functions",
+    "type": "requires"
+  },
+  {
+    "from": "percent_change",
+    "to": "growth_decay",
+    "type": "helpful"
+  },
+  {
+    "from": "exponential_functions",
+    "to": "logarithms",
+    "type": "requires"
+  },
+  {
+    "from": "inverse_functions",
+    "to": "logarithms",
+    "type": "requires"
+  },
+  {
+    "from": "function_notation",
+    "to": "sequences_series",
+    "type": "requires"
+  },
+  {
+    "from": "linear_functions",
+    "to": "arithmetic_sequences",
+    "type": "helpful"
+  },
+  {
+    "from": "exponential_functions",
+    "to": "geometric_sequences",
+    "type": "helpful"
+  },
+  {
+    "from": "ratios_proportions",
+    "to": "similar_triangles",
+    "type": "requires"
+  },
+  {
+    "from": "square_roots_radicals",
+    "to": "pythagorean_theorem",
+    "type": "requires"
+  },
+  {
+    "from": "linear_equations",
+    "to": "triangles",
+    "type": "helpful"
+  },
+  {
+    "from": "triangles",
+    "to": "trigonometry",
+    "type": "requires"
+  },
+  {
+    "from": "functions",
+    "to": "trigonometry",
+    "type": "requires"
+  },
+  {
+    "from": "linear_functions",
+    "to": "coordinate_geometry",
+    "type": "requires"
+  },
+  {
+    "from": "pythagorean_theorem",
+    "to": "distance_formula",
+    "type": "requires"
+  },
+  {
+    "from": "circle_equations",
+    "to": "unit_circle",
+    "type": "helpful"
+  },
+  {
+    "from": "pythagorean_theorem",
+    "to": "vector_magnitude",
+    "type": "requires"
+  },
+  {
+    "from": "coordinate_geometry",
+    "to": "vectors",
+    "type": "requires"
+  },
+  {
+    "from": "trigonometry",
+    "to": "vectors",
+    "type": "helpful"
+  },
+  {
+    "from": "vectors",
+    "to": "matrices",
+    "type": "requires"
+  },
+  {
+    "from": "dot_product",
+    "to": "matrix_multiplication",
+    "type": "requires"
+  },
+  {
+    "from": "systems_of_equations",
+    "to": "matrices",
+    "type": "helpful"
+  },
+  {
+    "from": "spread_std_dev",
+    "to": "normal_distribution",
+    "type": "requires"
+  },
+  {
+    "from": "square_roots_radicals",
+    "to": "spread_std_dev",
+    "type": "requires"
+  },
+  {
+    "from": "linear_functions",
+    "to": "scatter_plots_correlation",
+    "type": "helpful"
+  },
+  {
+    "from": "probability",
+    "to": "normal_distribution",
+    "type": "helpful"
+  },
+  {
+    "from": "functions",
+    "to": "derivatives",
+    "type": "requires"
+  },
+  {
+    "from": "slope",
+    "to": "derivative_definition",
+    "type": "requires"
+  },
+  {
+    "from": "polynomials",
+    "to": "power_rule",
+    "type": "requires"
+  },
+  {
+    "from": "function_composition",
+    "to": "chain_rule",
+    "type": "requires"
+  },
+  {
+    "from": "quadratic_functions",
+    "to": "optimization",
+    "type": "helpful"
+  },
+  {
+    "from": "vectors",
+    "to": "partial_derivatives",
+    "type": "helpful"
+  },
+  {
+    "from": "derivatives",
+    "to": "integrals",
+    "type": "requires"
+  },
+  {
+    "from": "sigma_notation",
+    "to": "area_under_curve",
+    "type": "requires"
+  },
+  {
+    "from": "power_rule",
+    "to": "antiderivatives",
+    "type": "requires"
+  },
+  {
+    "from": "logarithms",
+    "to": "derivatives",
+    "type": "helpful"
+  },
+  {
+    "from": "equivalent_fractions",
+    "to": "fraction_operations",
+    "type": "requires"
+  },
+  {
+    "from": "fraction_operations",
+    "to": "decimals_percents",
+    "type": "requires"
+  },
+  {
+    "from": "unit_rates",
+    "to": "proportional_relationships",
+    "type": "requires"
+  },
+  {
+    "from": "decimals_percents",
+    "to": "percent_change",
+    "type": "requires"
+  },
+  {
+    "from": "exponent_rules",
+    "to": "scientific_notation",
+    "type": "requires"
+  },
+  {
+    "from": "exponent_rules",
+    "to": "square_roots_radicals",
+    "type": "helpful"
+  },
+  {
+    "from": "order_of_operations",
+    "to": "distributive_property",
+    "type": "requires"
+  },
+  {
+    "from": "distributive_property",
+    "to": "combining_like_terms",
+    "type": "requires"
+  },
+  {
+    "from": "logical_statements",
+    "to": "mathematical_proof",
+    "type": "requires"
+  },
+  {
+    "from": "multistep_equations",
+    "to": "linear_inequalities",
+    "type": "requires"
+  },
+  {
+    "from": "multistep_equations",
+    "to": "literal_equations",
+    "type": "requires"
+  },
+  {
+    "from": "function_notation",
+    "to": "domain_range",
+    "type": "requires"
+  },
+  {
+    "from": "function_notation",
+    "to": "function_transformations",
+    "type": "requires"
+  },
+  {
+    "from": "function_notation",
+    "to": "function_composition",
+    "type": "requires"
+  },
+  {
+    "from": "function_composition",
+    "to": "inverse_functions",
+    "type": "requires"
+  },
+  {
+    "from": "slope",
+    "to": "slope_intercept_form",
+    "type": "requires"
+  },
+  {
+    "from": "angle_relationships",
+    "to": "similar_triangles",
+    "type": "requires"
+  },
+  {
+    "from": "angle_relationships",
+    "to": "triangle_congruence",
+    "type": "requires"
+  },
+  {
+    "from": "mean_median_mode",
+    "to": "spread_std_dev",
+    "type": "requires"
+  },
+  {
+    "from": "basic_probability",
+    "to": "counting_combinatorics",
+    "type": "helpful"
+  },
+  {
+    "from": "basic_probability",
+    "to": "conditional_probability",
+    "type": "requires"
+  },
+  {
+    "from": "conditional_probability",
+    "to": "bayes_theorem",
+    "type": "requires"
+  },
+  {
+    "from": "polynomial_arithmetic",
+    "to": "factoring",
+    "type": "requires"
+  },
+  {
+    "from": "factoring",
+    "to": "completing_the_square",
+    "type": "helpful"
+  },
+  {
+    "from": "completing_the_square",
+    "to": "quadratic_formula",
+    "type": "requires"
+  },
+  {
+    "from": "distance_formula",
+    "to": "circle_equations",
+    "type": "requires"
+  },
+  {
+    "from": "growth_decay",
+    "to": "compound_interest",
+    "type": "requires"
+  },
+  {
+    "from": "log_rules",
+    "to": "solving_exponential_equations",
+    "type": "requires"
+  },
+  {
+    "from": "arithmetic_sequences",
+    "to": "sigma_notation",
+    "type": "helpful"
+  },
+  {
+    "from": "right_triangle_trig",
+    "to": "unit_circle",
+    "type": "requires"
+  },
+  {
+    "from": "radians",
+    "to": "unit_circle",
+    "type": "requires"
+  },
+  {
+    "from": "unit_circle",
+    "to": "trig_identities",
+    "type": "requires"
+  },
+  {
+    "from": "vector_magnitude",
+    "to": "dot_product",
+    "type": "helpful"
+  },
+  {
+    "from": "matrix_operations",
+    "to": "matrix_multiplication",
+    "type": "requires"
+  },
+  {
+    "from": "matrix_multiplication",
+    "to": "determinants",
+    "type": "requires"
+  },
+  {
+    "from": "determinants",
+    "to": "matrix_inverse",
+    "type": "requires"
+  },
+  {
+    "from": "limits",
+    "to": "derivative_definition",
+    "type": "requires"
+  },
+  {
+    "from": "derivative_definition",
+    "to": "power_rule",
+    "type": "requires"
+  },
+  {
+    "from": "power_rule",
+    "to": "chain_rule",
+    "type": "requires"
+  },
+  {
+    "from": "derivative_definition",
+    "to": "optimization",
+    "type": "requires"
+  },
+  {
+    "from": "derivative_definition",
+    "to": "partial_derivatives",
+    "type": "requires"
+  },
+  {
+    "from": "antiderivatives",
+    "to": "fundamental_theorem",
+    "type": "requires"
+  },
+  {
+    "from": "area_under_curve",
+    "to": "fundamental_theorem",
+    "type": "requires"
+  }
+]

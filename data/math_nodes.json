@@ -1,0 +1,992 @@
+[
+  {
+    "id": "fractions_decimals",
+    "name": "Fractions & Decimals",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 1,
+    "description": "Ways to describe parts of a whole.",
+    "resources": []
+  },
+  {
+    "id": "equivalent_fractions",
+    "name": "Equivalent Fractions",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "fractions_decimals",
+    "level": 1,
+    "description": "Different-looking fractions that mean the same amount.",
+    "resources": []
+  },
+  {
+    "id": "fraction_operations",
+    "name": "Operations on Fractions",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "fractions_decimals",
+    "level": 1,
+    "description": "Adding, subtracting, multiplying and dividing fractions.",
+    "resources": []
+  },
+  {
+    "id": "decimals_percents",
+    "name": "Decimals & Percents",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "fractions_decimals",
+    "level": 1,
+    "description": "Writing parts of a whole in base ten or out of 100.",
+    "resources": []
+  },
+  {
+    "id": "ratios_proportions",
+    "name": "Ratios & Proportions",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 1,
+    "description": "Comparing quantities and scaling them up or down together.",
+    "resources": []
+  },
+  {
+    "id": "unit_rates",
+    "name": "Unit Rates",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "ratios_proportions",
+    "level": 1,
+    "description": "How much of one thing per single unit of another.",
+    "resources": []
+  },
+  {
+    "id": "proportional_relationships",
+    "name": "Proportional Relationships",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "ratios_proportions",
+    "level": 2,
+    "description": "Two quantities that always grow by the same factor.",
+    "resources": []
+  },
+  {
+    "id": "percent_change",
+    "name": "Percent Change",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "ratios_proportions",
+    "level": 2,
+    "description": "Describing increases and decreases as a percent.",
+    "resources": []
+  },
+  {
+    "id": "exponents_roots",
+    "name": "Exponents & Roots",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 1,
+    "description": "Repeated multiplication, and how to undo it.",
+    "resources": []
+  },
+  {
+    "id": "exponent_rules",
+    "name": "Exponent Rules",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "exponents_roots",
+    "level": 2,
+    "description": "Shortcuts for multiplying, dividing and raising powers.",
+    "resources": []
+  },
+  {
+    "id": "scientific_notation",
+    "name": "Scientific Notation",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "exponents_roots",
+    "level": 2,
+    "description": "Writing huge and tiny numbers as a number times a power of ten.",
+    "resources": []
+  },
+  {
+    "id": "square_roots_radicals",
+    "name": "Square Roots & Radicals",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "exponents_roots",
+    "level": 2,
+    "description": "Finding the number that multiplies by itself to give another.",
+    "resources": []
+  },
+  {
+    "id": "variables_expressions",
+    "name": "Variables & Expressions",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 1,
+    "description": "Using letters to stand for numbers you don't know yet.",
+    "resources": []
+  },
+  {
+    "id": "order_of_operations",
+    "name": "Order of Operations",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "variables_expressions",
+    "level": 1,
+    "description": "The agreed order for evaluating an expression.",
+    "resources": []
+  },
+  {
+    "id": "distributive_property",
+    "name": "Distributive Property",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "variables_expressions",
+    "level": 1,
+    "description": "Multiplying a number across everything inside parentheses.",
+    "resources": []
+  },
+  {
+    "id": "combining_like_terms",
+    "name": "Combining Like Terms",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "variables_expressions",
+    "level": 1,
+    "description": "Simplifying expressions by grouping matching pieces.",
+    "resources": []
+  },
+  {
+    "id": "sets_logic",
+    "name": "Sets & Logic",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 1,
+    "description": "Grouping things and reasoning with true-or-false statements.",
+    "resources": []
+  },
+  {
+    "id": "sets_venn",
+    "name": "Sets & Venn Diagrams",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "sets_logic",
+    "level": 1,
+    "description": "Collections of objects and how they overlap.",
+    "resources": []
+  },
+  {
+    "id": "logical_statements",
+    "name": "Logical Statements",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "sets_logic",
+    "level": 2,
+    "description": "Combining true/false claims with and, or, not, and if-then.",
+    "resources": []
+  },
+  {
+    "id": "mathematical_proof",
+    "name": "Mathematical Proof",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "sets_logic",
+    "level": 3,
+    "description": "Building an argument that shows something is always true.",
+    "resources": []
+  },
+  {
+    "id": "linear_equations",
+    "name": "Linear Equations",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 2,
+    "description": "Finding the unknown value that keeps an equation balanced.",
+    "resources": []
+  },
+  {
+    "id": "multistep_equations",
+    "name": "Solving Multi-Step Equations",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "linear_equations",
+    "level": 2,
+    "description": "Undoing operations step by step to isolate a variable.",
+    "resources": []
+  },
+  {
+    "id": "linear_inequalities",
+    "name": "Linear Inequalities",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "linear_equations",
+    "level": 2,
+    "description": "Finding all the values that make a comparison true.",
+    "resources": []
+  },
+  {
+    "id": "literal_equations",
+    "name": "Rearranging Formulas",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "linear_equations",
+    "level": 2,
+    "description": "Solving a formula for a different variable.",
+    "resources": []
+  },
+  {
+    "id": "functions",
+    "name": "Functions",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 2,
+    "description": "Rules that turn each input into exactly one output.",
+    "resources": []
+  },
+  {
+    "id": "function_notation",
+    "name": "Function Notation",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "functions",
+    "level": 2,
+    "description": "Writing f(x) to name a rule and its input.",
+    "resources": []
+  },
+  {
+    "id": "domain_range",
+    "name": "Domain & Range",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "functions",
+    "level": 2,
+    "description": "Which inputs a function accepts and which outputs it can give.",
+    "resources": []
+  },
+  {
+    "id": "function_transformations",
+    "name": "Transforming Functions",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "functions",
+    "level": 3,
+    "description": "Shifting, stretching and flipping graphs.",
+    "resources": []
+  },
+  {
+    "id": "function_composition",
+    "name": "Composing Functions",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "functions",
+    "level": 3,
+    "description": "Feeding one function's output into another.",
+    "resources": []
+  },
+  {
+    "id": "inverse_functions",
+    "name": "Inverse Functions",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "functions",
+    "level": 3,
+    "description": "A function that undoes another function.",
+    "resources": []
+  },
+  {
+    "id": "linear_functions",
+    "name": "Linear Functions",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 2,
+    "description": "Relationships that change at a constant rate and graph as lines.",
+    "resources": []
+  },
+  {
+    "id": "slope",
+    "name": "Slope",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "linear_functions",
+    "level": 2,
+    "description": "How steep a line is: rise over run.",
+    "resources": []
+  },
+  {
+    "id": "slope_intercept_form",
+    "name": "Slope-Intercept Form",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "linear_functions",
+    "level": 2,
+    "description": "Writing a line as y = mx + b.",
+    "resources": []
+  },
+  {
+    "id": "triangles",
+    "name": "Triangles & Angles",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 2,
+    "description": "Shapes and angle facts that geometry is built on.",
+    "resources": []
+  },
+  {
+    "id": "angle_relationships",
+    "name": "Angle Relationships",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "triangles",
+    "level": 1,
+    "description": "Supplementary, vertical and parallel-line angles.",
+    "resources": []
+  },
+  {
+    "id": "pythagorean_theorem",
+    "name": "Pythagorean Theorem",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "triangles",
+    "level": 2,
+    "description": "a² + b² = c² for right triangles.",
+    "resources": []
+  },
+  {
+    "id": "similar_triangles",
+    "name": "Similar Triangles",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "triangles",
+    "level": 2,
+    "description": "Same shape, different size, with proportional sides.",
+    "resources": []
+  },
+  {
+    "id": "triangle_congruence",
+    "name": "Triangle Congruence",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "triangles",
+    "level": 3,
+    "description": "Proving two triangles are exact copies.",
+    "resources": []
+  },
+  {
+    "id": "statistics",
+    "name": "Statistics",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 2,
+    "description": "Summarizing and making sense of data.",
+    "resources": []
+  },
+  {
+    "id": "mean_median_mode",
+    "name": "Mean, Median & Mode",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "statistics",
+    "level": 1,
+    "description": "Different ways to find the center of a data set.",
+    "resources": []
+  },
+  {
+    "id": "spread_std_dev",
+    "name": "Standard Deviation & Spread",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "statistics",
+    "level": 3,
+    "description": "Measuring how spread out the data is.",
+    "resources": []
+  },
+  {
+    "id": "scatter_plots_correlation",
+    "name": "Scatter Plots & Correlation",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "statistics",
+    "level": 3,
+    "description": "Spotting relationships between two variables.",
+    "resources": []
+  },
+  {
+    "id": "normal_distribution",
+    "name": "Normal Distribution",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "statistics",
+    "level": 4,
+    "description": "The bell curve and why so much data follows it.",
+    "resources": []
+  },
+  {
+    "id": "probability",
+    "name": "Probability",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 2,
+    "description": "Measuring how likely something is to happen.",
+    "resources": []
+  },
+  {
+    "id": "basic_probability",
+    "name": "Basic Probability",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "probability",
+    "level": 2,
+    "description": "Favorable outcomes divided by possible outcomes.",
+    "resources": []
+  },
+  {
+    "id": "counting_combinatorics",
+    "name": "Permutations & Combinations",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "probability",
+    "level": 3,
+    "description": "Counting arrangements and selections without listing them.",
+    "resources": []
+  },
+  {
+    "id": "conditional_probability",
+    "name": "Conditional Probability",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "probability",
+    "level": 3,
+    "description": "How likely A is once you know B happened.",
+    "resources": []
+  },
+  {
+    "id": "bayes_theorem",
+    "name": "Bayes' Theorem",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "probability",
+    "level": 4,
+    "description": "Updating a belief when new evidence arrives.",
+    "resources": []
+  },
+  {
+    "id": "systems_of_equations",
+    "name": "Systems of Equations",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 3,
+    "description": "Finding values that satisfy several equations at once.",
+    "resources": []
+  },
+  {
+    "id": "substitution_method",
+    "name": "Substitution Method",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "systems_of_equations",
+    "level": 3,
+    "description": "Solving one equation and plugging it into another.",
+    "resources": []
+  },
+  {
+    "id": "elimination_method",
+    "name": "Elimination Method",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "systems_of_equations",
+    "level": 3,
+    "description": "Adding equations together to cancel a variable.",
+    "resources": []
+  },
+  {
+    "id": "polynomials",
+    "name": "Polynomials",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 3,
+    "description": "Expressions built from powers of a variable.",
+    "resources": []
+  },
+  {
+    "id": "polynomial_arithmetic",
+    "name": "Adding & Multiplying Polynomials",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "polynomials",
+    "level": 3,
+    "description": "Combining polynomials into one expression.",
+    "resources": []
+  },
+  {
+    "id": "factoring",
+    "name": "Factoring",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "polynomials",
+    "level": 3,
+    "description": "Breaking a polynomial into pieces that multiply together.",
+    "resources": []
+  },
+  {
+    "id": "quadratic_functions",
+    "name": "Quadratic Functions",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 3,
+    "description": "Functions with an x² term that graph as parabolas.",
+    "resources": []
+  },
+  {
+    "id": "parabolas",
+    "name": "Graphing Parabolas",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "quadratic_functions",
+    "level": 3,
+    "description": "The U-shaped graph, its vertex and its axis.",
+    "resources": []
+  },
+  {
+    "id": "completing_the_square",
+    "name": "Completing the Square",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "quadratic_functions",
+    "level": 3,
+    "description": "Rewriting a quadratic to reveal its vertex.",
+    "resources": []
+  },
+  {
+    "id": "quadratic_formula",
+    "name": "Quadratic Formula",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "quadratic_functions",
+    "level": 3,
+    "description": "A formula that solves any quadratic equation.",
+    "resources": []
+  },
+  {
+    "id": "coordinate_geometry",
+    "name": "Coordinate Geometry",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 3,
+    "description": "Describing shapes with points on a grid.",
+    "resources": []
+  },
+  {
+    "id": "distance_formula",
+    "name": "Distance Formula",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "coordinate_geometry",
+    "level": 3,
+    "description": "The length between two points.",
+    "resources": []
+  },
+  {
+    "id": "midpoint_formula",
+    "name": "Midpoint Formula",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "coordinate_geometry",
+    "level": 3,
+    "description": "The point exactly halfway between two points.",
+    "resources": []
+  },
+  {
+    "id": "circle_equations",
+    "name": "Equations of Circles",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "coordinate_geometry",
+    "level": 3,
+    "description": "Describing a circle with an equation.",
+    "resources": []
+  },
+  {
+    "id": "exponential_functions",
+    "name": "Exponential Functions",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 3,
+    "description": "Quantities that multiply by the same factor each step.",
+    "resources": []
+  },
+  {
+    "id": "growth_decay",
+    "name": "Exponential Growth & Decay",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "exponential_functions",
+    "level": 3,
+    "description": "Populations, viruses and radioactive decay.",
+    "resources": []
+  },
+  {
+    "id": "compound_interest",
+    "name": "Compound Interest",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "exponential_functions",
+    "level": 3,
+    "description": "How money grows when interest earns interest.",
+    "resources": []
+  },
+  {
+    "id": "sequences_series",
+    "name": "Sequences & Series",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 3,
+    "description": "Ordered lists of numbers and their sums.",
+    "resources": []
+  },
+  {
+    "id": "arithmetic_sequences",
+    "name": "Arithmetic Sequences",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "sequences_series",
+    "level": 3,
+    "description": "Lists that add the same amount each step.",
+    "resources": []
+  },
+  {
+    "id": "geometric_sequences",
+    "name": "Geometric Sequences",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "sequences_series",
+    "level": 3,
+    "description": "Lists that multiply by the same amount each step.",
+    "resources": []
+  },
+  {
+    "id": "sigma_notation",
+    "name": "Sigma Notation",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "sequences_series",
+    "level": 3,
+    "description": "A compact way to write long sums.",
+    "resources": []
+  },
+  {
+    "id": "logarithms",
+    "name": "Logarithms",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 4,
+    "description": "Asking what power gives a number; the inverse of exponents.",
+    "resources": []
+  },
+  {
+    "id": "log_rules",
+    "name": "Properties of Logarithms",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "logarithms",
+    "level": 4,
+    "description": "Rules for combining and splitting logs.",
+    "resources": []
+  },
+  {
+    "id": "natural_log",
+    "name": "e and the Natural Log",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "logarithms",
+    "level": 4,
+    "description": "The special number e and its logarithm.",
+    "resources": []
+  },
+  {
+    "id": "solving_exponential_equations",
+    "name": "Solving Exponential Equations",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "logarithms",
+    "level": 4,
+    "description": "Using logs to bring a variable down from an exponent.",
+    "resources": []
+  },
+  {
+    "id": "trigonometry",
+    "name": "Trigonometry",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 4,
+    "description": "Connecting angles to side lengths and to circles.",
+    "resources": []
+  },
+  {
+    "id": "right_triangle_trig",
+    "name": "Sine, Cosine & Tangent",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "trigonometry",
+    "level": 3,
+    "description": "Side ratios in right triangles.",
+    "resources": []
+  },
+  {
+    "id": "radians",
+    "name": "Radians",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "trigonometry",
+    "level": 4,
+    "description": "Measuring angles by arc length.",
+    "resources": []
+  },
+  {
+    "id": "unit_circle",
+    "name": "Unit Circle",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "trigonometry",
+    "level": 4,
+    "description": "Extending sine and cosine to any angle.",
+    "resources": []
+  },
+  {
+    "id": "trig_identities",
+    "name": "Trig Identities",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "trigonometry",
+    "level": 4,
+    "description": "Equations that are true for every angle.",
+    "resources": []
+  },
+  {
+    "id": "vectors",
+    "name": "Vectors",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 4,
+    "description": "Quantities with both a size and a direction.",
+    "resources": []
+  },
+  {
+    "id": "vector_addition",
+    "name": "Vector Addition",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "vectors",
+    "level": 4,
+    "description": "Combining vectors tip to tail.",
+    "resources": []
+  },
+  {
+    "id": "scalar_multiplication",
+    "name": "Scalar Multiplication",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "vectors",
+    "level": 4,
+    "description": "Stretching or shrinking a vector.",
+    "resources": []
+  },
+  {
+    "id": "vector_magnitude",
+    "name": "Magnitude of a Vector",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "vectors",
+    "level": 4,
+    "description": "How long a vector is.",
+    "resources": []
+  },
+  {
+    "id": "dot_product",
+    "name": "Dot Product",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "vectors",
+    "level": 4,
+    "description": "A number that measures how much two vectors point the same way.",
+    "resources": []
+  },
+  {
+    "id": "matrices",
+    "name": "Matrices",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 4,
+    "description": "Grids of numbers for organizing and transforming data.",
+    "resources": []
+  },
+  {
+    "id": "matrix_operations",
+    "name": "Adding & Scaling Matrices",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "matrices",
+    "level": 4,
+    "description": "Entry-by-entry matrix arithmetic.",
+    "resources": []
+  },
+  {
+    "id": "matrix_multiplication",
+    "name": "Matrix Multiplication",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "matrices",
+    "level": 4,
+    "description": "Combining matrices row by column.",
+    "resources": []
+  },
+  {
+    "id": "determinants",
+    "name": "Determinants",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "matrices",
+    "level": 5,
+    "description": "A single number that says how a matrix stretches space.",
+    "resources": []
+  },
+  {
+    "id": "matrix_inverse",
+    "name": "Matrix Inverse",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "matrices",
+    "level": 5,
+    "description": "The matrix that undoes another matrix.",
+    "resources": []
+  },
+  {
+    "id": "derivatives",
+    "name": "Derivatives",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 5,
+    "description": "The instantaneous rate of change of a function.",
+    "resources": []
+  },
+  {
+    "id": "limits",
+    "name": "Limits",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "derivatives",
+    "level": 4,
+    "description": "The value a function approaches as the input gets close to a point.",
+    "resources": []
+  },
+  {
+    "id": "derivative_definition",
+    "name": "Derivative as Rate of Change",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "derivatives",
+    "level": 5,
+    "description": "The slope of a curve at a single point.",
+    "resources": []
+  },
+  {
+    "id": "power_rule",
+    "name": "Power Rule",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "derivatives",
+    "level": 5,
+    "description": "The shortcut for differentiating powers of x.",
+    "resources": []
+  },
+  {
+    "id": "chain_rule",
+    "name": "Chain Rule",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "derivatives",
+    "level": 5,
+    "description": "Differentiating a function inside another function.",
+    "resources": []
+  },
+  {
+    "id": "optimization",
+    "name": "Finding Maxima & Minima",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "derivatives",
+    "level": 5,
+    "description": "Using derivatives to find the best value.",
+    "resources": []
+  },
+  {
+    "id": "partial_derivatives",
+    "name": "Partial Derivatives & Gradients",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "derivatives",
+    "level": 5,
+    "description": "Rates of change when a function has several inputs.",
+    "resources": []
+  },
+  {
+    "id": "integrals",
+    "name": "Integrals",
+    "forest": "math",
+    "kind": "tree",
+    "parent": null,
+    "level": 5,
+    "description": "Adding up infinitely many tiny pieces.",
+    "resources": []
+  },
+  {
+    "id": "antiderivatives",
+    "name": "Antiderivatives",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "integrals",
+    "level": 5,
+    "description": "Running a derivative backwards.",
+    "resources": []
+  },
+  {
+    "id": "area_under_curve",
+    "name": "Area Under a Curve",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "integrals",
+    "level": 5,
+    "description": "Approximating area with thinner and thinner rectangles.",
+    "resources": []
+  },
+  {
+    "id": "fundamental_theorem",
+    "name": "Fundamental Theorem of Calculus",
+    "forest": "math",
+    "kind": "shrub",
+    "parent": "integrals",
+    "level": 5,
+    "description": "Why derivatives and integrals undo each other.",
+    "resources": []
+  }
+]
