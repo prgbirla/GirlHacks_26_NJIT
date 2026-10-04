@@ -1,0 +1,14 @@
+Welcome to Knowledge Forest!
+
+This website is a resource built for curious high schoolers looking to learn math on their own.
+In a world swarmed with AI generated courses and educational sources, we no longer get automatically exposed to tangents and rabbit holes from internet deep dives. Finding the next logical concept to learn or
+the path to take to reach a goal concept has always been difficult, and without the human resources to guide us, this becomes even more difficult. Knowledge Forest is a website that visualizes how concepts build
+and relate to each other. A user can start from their current knowledge level and build up or choose a goal and track it backwards to find a starting point.
+
+The Knowledge Forest website was built over the course of a 24-hr hackathon, and as such, is not as comprehensive as the idea. It currently contains math concepts ranging from Algebra to Optimization. The project idea
+itself spans all the levels of mathametics, and all of the possible educational fields (machine learning, engineering, biology, etc.). For this project, we chose mathematics, which is something that the team
+felt that they and the judges could discuss on fairly equal footing and to understand the links/connections made in the knowledge map. We also chose to focus on high schoolers, using high school to college
+level math, since more elementary concepts would create a crowded map from the many connections needed, while only using very complex concepts would leave to a very chronological and strict map. We wanted to display a
+mix of these styles.
+
+Everyone is welcome to use the Knowledge Forest to satisfy their curiosity - and to fuel it, I hope!
