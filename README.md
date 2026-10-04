@@ -9,8 +9,10 @@ Everyone is welcome to use the Knowledge Forest to satisfy their curiosity - and
 
 ---
 
-### 🌐 Link to Final Website Submission
-👉 **[https://screenshot-clone-js.lovable.app](https://screenshot-clone-js.lovable.app)**
+### 🌐 Live Links & Submission
+
+* 🚀 **Lovable Deployment:** [screenshot-clone-js.lovable.app](https://screenshot-clone-js.lovable.app)
+* 🔗 **Website Domain:** [knowledgeforest.study](https://knowledgeforest.study)
 
 ---
 
