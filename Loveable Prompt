@@ -1,0 +1,196 @@
+Build a single-page interactive web application called "Concept Forest" — a visual knowledge atlas that maps the mathematical journey from algebra through geometry, trigonometry, discrete mathematics, calculus, linear algebra, probability, statistics, and optimization.
+
+
+
+The central idea is:
+
+
+
+Mathematics grows like a forest.
+
+
+
+Every concept is a tree. Foundational concepts are the roots. More advanced concepts grow from them as branches, all the way up into the canopy of optimization. The application should feel like a nostalgic daylight fantasy console-RPG overworld, inspired by the visual feeling of GBA-era adventure games and peaceful hand-painted fantasy forests. Use warm, earthy colors and nature motifs. Do NOT make it look like a cyberpunk dashboard.
+
+
+
+ABSOLUTE DESIGN RULES
+
+No neon, no cyberpunk, no glowing futuristic UI.
+
+No XP, no levels, no scores, no grades, no course numbers, no gamification mechanics.
+
+No external images that can break — all art is inline SVG.
+
+Use warm natural colors: moss green, forest green, sandstone, parchment, bark brown, amber gold, muted cream.
+
+Use subtle animation rather than flashy effects.
+
+The application should feel scholarly, calm, exploratory, and magical.
+
+Use Fraunces for display headings, Nunito for body text, JetBrains Mono for formulas and math notation. Use semantic color design tokens in OKLCH.
+
+
+
+1. THE COMPLETE KNOWLEDGE FOREST
+
+The most important requirement is a complete dependency graph, not merely a collection of topics. Organize the knowledge into nine progressive groves: Algebra, Geometry, Trigonometry, Discrete Mathematics, Calculus, Linear Algebra, Probability, Statistics, Optimization.
+
+
+
+The user starts at Functions in Algebra and eventually reaches Gradient Descent and Lagrange Multipliers in Optimization through understandable prerequisite relationships. Do not artificially force every concept into one linear sequence — mathematics has branches; create a realistic directed dependency graph.
+
+
+
+Use approximately 190 concepts. Each concept must contain: unique ID, name, grove/category, dependency depth, plain-English explanation, formal definition where appropriate, formula where appropriate, tappable formula symbols, prerequisite concept IDs, concepts it unlocks, intuitive examples, real-world applications, and a suggested tree variant.
+
+
+
+2. THE GROVES
+
+GROVE 1 — ALGEBRA. Functions, Domain, Range, Function Notation, Linear Functions, Slope-Intercept Form, Point-Slope Form, Systems of Equations, Substitution, Elimination, Quadratic Functions, Factoring, Completing the Square, Quadratic Formula, Polynomial Functions, Polynomial Operations, Rational Expressions, Rational Functions, Exponential Functions, Logarithmic Functions, Logarithms, Inverse Functions, Composition of Functions, Transformations of Functions, Complex Numbers, Mathematical Modeling.
+
+
+
+GROVE 2 — GEOMETRY. Points, Lines, and Planes; Angles; Triangles; Congruence; Similarity; Pythagorean Theorem; Distance Formula; Midpoint; Circles; Arc Length; Area; Surface Area; Volume; Coordinate Geometry; Vectors; Dot Product; Parametric Curves.
+
+
+
+GROVE 3 — TRIGONOMETRY. Sine, Cosine, Tangent, Unit Circle, Radians, Trigonometric Identities, Inverse Trigonometric Functions, Law of Sines, Law of Cosines, Graphs of Trigonometric Functions, Periodicity, Amplitude, Phase, Polar Coordinates.
+
+
+
+GROVE 4 — DISCRETE MATHEMATICS. Sets, Set Operations, Logic, Propositions, Truth Tables, Quantifiers, Proofs, Mathematical Induction, Relations, Functions as Mappings, Combinatorics, Permutations, Combinations, Counting Principles, Recursion, Graph Theory, Trees, Networks, Boolean Algebra. Connect these to computer science and algorithms.
+
+
+
+GROVE 5 — CALCULUS. Intuitive Limits, Limits, Continuity, Derivatives, Derivative Rules, Product Rule, Quotient Rule, Chain Rule, Implicit Differentiation, Related Rates, Optimization, Critical Points, Curve Sketching, Mean Value Theorem, Antiderivatives, Definite Integrals, Riemann Sums, Fundamental Theorem of Calculus, Integration Techniques, Substitution, Integration by Parts, Improper Integrals, Sequences, Infinite Series, Taylor Series, Maclaurin Series, Multivariable Functions, Partial Derivatives, Gradients, Directional Derivatives, Jacobian, Multiple Integrals, Vector Fields, Divergence, Curl, Line Integrals.
+
+
+
+GROVE 6 — LINEAR ALGEBRA. Vectors, Vector Spaces, Linear Combinations, Span, Linear Independence, Basis, Dimension, Matrices, Matrix Addition, Matrix Multiplication, Transpose, Inverse Matrix, Systems of Linear Equations, Gaussian Elimination, Rank, Null Space, Column Space, Linear Transformations, Determinants, Eigenvalues, Eigenvectors, Diagonalization, Orthogonality, Orthogonal Projection, Gram-Schmidt, Least Squares, Singular Value Decomposition, Principal Component Analysis. Make the graph clearly show: Vectors → Matrices → Linear Transformations → Eigenvectors → SVD → PCA.
+
+
+
+GROVE 7 — PROBABILITY. Sample Spaces, Events, Probability, Conditional Probability, Independence, Bayes' Theorem, Random Variables, Discrete Random Variables, Continuous Random Variables, Probability Mass Functions, Probability Density Functions, Cumulative Distribution Functions, Expected Value, Variance, Standard Deviation, Covariance, Correlation, Joint Distributions, Marginal Distributions, Conditional Distributions, Law of Large Numbers, Central Limit Theorem.
+
+
+
+GROVE 8 — STATISTICS. Population vs Sample, Sampling, Descriptive Statistics, Mean, Median, Mode, Variance, Standard Deviation, Quantiles, Percentiles, Distributions, Normal Distribution, Z-Scores, Sampling Distributions, Confidence Intervals, Hypothesis Testing, Null Hypothesis, Alternative Hypothesis, p-values, Statistical Significance, Type I Error, Type II Error, Statistical Power, Effect Size, Correlation, Covariance, Linear Regression, Multiple Regression, Logistic Regression, ANOVA, Maximum Likelihood Estimation, Bayesian Inference.
+
+
+
+GROVE 9 — OPTIMIZATION. This grove connects calculus, linear algebra, probability, and statistics. Objective Functions, Constraints, Feasible Regions, Convex Sets, Convex Functions, Local Minima, Global Minima, Partial Derivatives, Gradient, Direction of Steepest Descent, Gradient Descent, Learning Rate, Newton's Method, Hessian Matrix, Lagrange Multipliers, Constrained Optimization, Regularization, L1 Regularization, L2 Regularization.
+
+
+
+3. DEPENDENCY GRAPH
+
+Do NOT arrange concepts alphabetically. Create meaningful prerequisite relationships, e.g.:
+
+
+
+Functions → Limits → Derivatives → Gradients → Gradient Descent
+
+Geometry → Coordinate Geometry → Vectors → Matrices → Linear Algebra
+
+Counting Principles → Combinatorics → Probability → Random Variables → Statistics
+
+Probability → Conditional Probability → Bayes' Theorem → Maximum Likelihood → Bayesian Inference
+
+Prerequisites must be mathematically defensible: a concept should never require a topic that is actually downstream from it. Compute each concept's depth from its prerequisite chain automatically — foundational concepts sit at the roots, advanced ones rise toward the canopy.
+
+
+
+4. MAP DESIGN
+
+Create a large interactive canvas occupying approximately 65% of the screen. Create horizontal grove lanes, each with a wooden banner. Concepts appear at different vertical dependency depths: foundational concepts visually sit toward the roots, advanced concepts rise toward the canopy. Optimization forms the upper canopy where the branches converge.
+
+
+
+5. CONCEPT NODES
+
+Every concept is a circular fantasy medallion: gold outer rim, dark wooden forest socket, illustrated tree inside, nameplate underneath. Use different tree species for mathematical families — Oak → algebra/calculus, Maple → geometry, Cypress → trigonometry, Birch → discrete math, Pine → linear algebra, Willow → probability, Ginkgo → statistics, Cedar → optimization. Tree art must be inline SVG with no external image URLs.
+
+
+
+6. PATHS
+
+Connect prerequisites with orthogonal paths (drop → horizontal run → drop). Use subtle animated chevrons traveling along paths. When a concept is selected: prerequisite paths become amber/gold, prerequisite nodes receive a gold emphasis, downstream concepts become grass-green, and unrelated concepts stay subdued. No neon glow.
+
+
+
+7. CAMERA SYSTEM
+
+Support mouse dragging, touch dragging, pinch and wheel zoom, smooth camera movement, concept focusing, grove focusing, and whole-map view. Clicking a concept smoothly centers it, zooms in, highlights prerequisites and downstream concepts, and opens the dossier. Spacebar re-centers the focus; "Whole Tree" zooms out to show the entire clearing.
+
+
+
+8. WELCOME SCREEN
+
+A full-screen forest welcome screen displaying:
+
+
+
+Concept Forest
+
+
+
+Mathematics grows like a forest.
+
+
+
+Explore the ideas that connect algebra to geometry, calculus, probability, statistics, and optimization.
+
+
+
+A search box with live autocomplete (typing "grad" suggests Gradient, Gradient Descent; Enter picks the top result). Starter-topic chips: Algebra, Geometry, Calculus, Linear Algebra, Probability, Optimization. A button, "Begin with algebra", starts the user at Functions.
+
+
+
+9. TOP NAVIGATION
+
+Atlas view: the "Concept Forest" title (clicking returns to the welcome screen), Search, Grove selector (All Groves plus the nine groves), Center Focus, Whole Tree, and Curriculum Index. Selecting a grove smoothly moves the camera to that section.
+
+
+
+10. DOSSIER SIDEBAR
+
+A parchment dossier showing, for every concept: the name, a large tree medallion, the grove, "rests on N ideas" (prerequisites) and "opens the way to M" (unlocks), Intuitive Concept Lore (plain language, no jargon), a Formal Formulation in a dark terminal-style block where every meaningful symbol is tappable and reveals its meaning ("Symbol: ∇ — the gradient points toward the direction where the function increases most quickly" — built generically for multiple symbols), a "Trail from the Roots" breadcrumb of prerequisites, Foundational Roots (clickable prerequisite cards), Future Learning Horizons (clickable unlocked concepts), and Real-World Field Horizons (engineering, finance, physics, graphics, economics, data science, etc.).
+
+
+
+11. CURRICULUM INDEX
+
+A modal listing every concept grouped by grove, in dependency order. Every item is clickable and moves the camera to that concept. The index and map must be generated from the SAME concept dataset — never maintain separate lists.
+
+
+
+12. SEARCH
+
+Search across concept names, aliases, explanations, mathematical notation, and applications. Searching "derivative" returns Derivative, Partial Derivative, Directional Derivative; searching "finance" returns concepts used in finance; searching a grove name surfaces its concepts.
+
+
+
+13. EDUCATIONAL QUALITY
+
+Every concept must answer: What is it? Why does it matter? What does the mathematics mean? Where does it lead? Keep explanations concise, accurate, and original — no copied textbook or Wikipedia text.
+
+
+
+14. RESPONSIVE DESIGN, ACCESSIBILITY, PERFORMANCE
+
+Desktop: map ~65%, dossier ~35%. Mobile: full-screen map with the dossier as a bottom sheet, touch gestures working naturally. Include keyboard navigation, visible focus states, ARIA labels, sufficient contrast, reduced-motion support, and accessible text descriptions for formulas; never rely on color alone to convey relationships. The map may contain 190+ concepts — use efficient SVG rendering, camera transforms, memoized components, and CSS transforms for smooth animation.
+
+
+
+15. TECHNICAL ARCHITECTURE
+
+React, TypeScript, Tailwind CSS, TanStack Start, and SVG. Create a central concept data structure (id, name, grove, depth, description, intuition, formula, prerequisites, unlocks, applications, treeVariant, aliases). The map, nodes, connections, search, autocomplete, dossier, prerequisite highlighting, unlock highlighting, grove selector, and curriculum index must ALL derive from this single source of truth.
+
+
+
+16. FINAL EXPERIENCE & QUALITY BAR
+
+The user should be able to trace backward from any advanced idea — click Gradient Descent and see its roots: Gradient ← Derivatives ← Limits ← Functions ← Algebra — and forward toward where it leads. Do not build a generic dashboard or a static illustration; build an actual interactive knowledge atlas that makes a user think: "I can finally see how all of this mathematics connects." Prioritize mathematical correctness, clear dependencies, educational usefulness, readability, smooth interaction, visual atmosphere, and performance.
+
