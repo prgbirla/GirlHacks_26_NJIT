@@ -1,0 +1,192 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Nunito", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-parchment: var(--parchment);
+  --color-parchment-deep: var(--parchment-deep);
+  --color-bark: var(--bark);
+  --color-bark-dark: var(--bark-dark);
+  --color-moss: var(--moss);
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
+  --color-amber: var(--amber);
+  --color-gold: var(--gold);
+  --color-cream: var(--cream);
+  --color-grass: var(--grass);
+  --color-sandstone: var(--sandstone);
+  --color-ink: var(--ink);
+  --color-terminal: var(--terminal);
+  --color-terminal-foreground: var(--terminal-foreground);
+}
+
+:root {
+  --radius: 0.75rem;
+  --parchment: oklch(0.95 0.035 85);
+  --parchment-deep: oklch(0.89 0.05 80);
+  --cream: oklch(0.97 0.025 90);
+  --sandstone: oklch(0.82 0.06 70);
+  --bark: oklch(0.45 0.06 55);
+  --bark-dark: oklch(0.3 0.045 50);
+  --moss: oklch(0.62 0.1 130);
+  --forest: oklch(0.45 0.09 145);
+  --forest-deep: oklch(0.3 0.06 150);
+  --amber: oklch(0.74 0.14 70);
+  --gold: oklch(0.8 0.13 85);
+  --grass: oklch(0.62 0.15 135);
+  --ink: oklch(0.27 0.03 60);
+  --terminal: oklch(0.24 0.03 150);
+  --terminal-foreground: oklch(0.88 0.08 120);
+
+  --background: var(--parchment);
+  --foreground: var(--ink);
+  --card: var(--cream);
+  --card-foreground: var(--ink);
+  --popover: var(--cream);
+  --popover-foreground: var(--ink);
+  --primary: var(--forest);
+  --primary-foreground: var(--cream);
+  --secondary: var(--parchment-deep);
+  --secondary-foreground: var(--bark-dark);
+  --muted: oklch(0.9 0.035 85);
+  --muted-foreground: oklch(0.45 0.04 60);
+  --accent: var(--amber);
+  --accent-foreground: var(--bark-dark);
+  --destructive: oklch(0.55 0.18 30);
+  --destructive-foreground: var(--cream);
+  --border: oklch(0.78 0.05 70);
+  --input: oklch(0.8 0.05 70);
+  --ring: var(--amber);
+
+  /* map scenery */
+  --sky-top: oklch(0.9 0.05 200);
+  --sky-bottom: oklch(0.93 0.05 110);
+  --lane-a: oklch(0.86 0.07 125 / 0.55);
+  --lane-b: oklch(0.82 0.08 135 / 0.55);
+  --ground: oklch(0.55 0.08 70);
+  --edge: oklch(0.45 0.05 55 / 0.45);
+
+  /* tree palette */
+  --leaf-oak: oklch(0.52 0.11 140);
+  --leaf-maple: oklch(0.62 0.15 45);
+  --leaf-cypress: oklch(0.42 0.08 160);
+  --leaf-birch: oklch(0.72 0.13 115);
+  --leaf-sequoia: oklch(0.45 0.1 145);
+  --leaf-pine: oklch(0.38 0.08 165);
+  --leaf-willow: oklch(0.68 0.12 125);
+  --leaf-ginkgo: oklch(0.8 0.15 90);
+  --leaf-cedar: oklch(0.48 0.09 155);
+  --leaf-shade: oklch(0.25 0.05 150 / 0.3);
+  --trunk: oklch(0.4 0.06 50);
+  --trunk-red: oklch(0.45 0.1 40);
+  --trunk-birch: oklch(0.93 0.02 90);
+
+  --shadow-panel: 0 10px 30px -12px oklch(0.3 0.05 60 / 0.45);
+  --gradient-wood: linear-gradient(180deg, oklch(0.52 0.07 55), oklch(0.38 0.06 50));
+  --gradient-parchment: radial-gradient(ellipse at top, var(--cream), var(--parchment) 60%, var(--parchment-deep));
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); }
+  :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+}
+
+@utility wood-plank {
+  background: var(--gradient-wood);
+  color: var(--cream);
+  border: 2px solid var(--bark-dark);
+  box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.2), 0 3px 0 var(--bark-dark);
+}
+@utility parchment-panel {
+  background: var(--gradient-parchment);
+  box-shadow: var(--shadow-panel);
+}
+@utility btn-forest {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  border-radius: 0.6rem; padding: 0.45rem 0.85rem; font-weight: 700; font-size: 0.85rem;
+  background: var(--cream); color: var(--bark-dark); border: 2px solid var(--bark);
+  box-shadow: 0 2px 0 var(--bark);
+  transition: transform .15s, background .15s;
+  &:hover { background: var(--parchment-deep); }
+  &:active { transform: translateY(2px); box-shadow: none; }
+}
+@utility btn-hero {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border-radius: 0.8rem; padding: 0.8rem 1.4rem; font-weight: 800;
+  background: var(--forest); color: var(--cream); border: 2px solid var(--forest-deep);
+  box-shadow: 0 4px 0 var(--forest-deep);
+  transition: transform .15s, background .15s;
+  &:hover { background: var(--forest-deep); }
+  &:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--forest-deep); }
+}
+
+/* map svg classes */
+.edge { fill: none; stroke: var(--edge); stroke-width: 2.5; stroke-dasharray: 2 7; stroke-linecap: round; transition: stroke .3s, opacity .3s; }
+.edge.dim { opacity: 0.25; }
+.edge.pre { stroke: var(--amber); stroke-width: 4.5; stroke-dasharray: none; opacity: 1; }
+.edge.post { stroke: var(--grass); stroke-width: 3.5; stroke-dasharray: 10 6; opacity: 1; }
+.chevron { fill: var(--cream); stroke: var(--bark-dark); stroke-width: 0.8; }
+.node { cursor: pointer; transition: opacity .3s; }
+.node.dim { opacity: 0.35; }
+.node:focus { outline: none; }
+.node:focus-visible .rim { stroke: var(--forest-deep); stroke-width: 6; }
+.node:hover .rim { stroke: var(--amber); }
+.rim { fill: var(--bark-dark); stroke: var(--gold); stroke-width: 4; }
+.socket { fill: oklch(0.32 0.05 140); stroke: var(--bark); stroke-width: 2; }
+.halo-pre { fill: none; stroke: var(--amber); stroke-width: 4; }
+.halo-post { fill: none; stroke: var(--grass); stroke-width: 3; stroke-dasharray: 6 4; }
+.halo-sel { fill: none; stroke: var(--gold); stroke-width: 5; }
+.plate { fill: var(--cream); stroke: var(--bark); stroke-width: 1.5; }
+.plate-text { fill: var(--ink); font-family: var(--font-sans); font-weight: 800; font-size: 11px; }
+.banner-text { fill: var(--cream); font-family: var(--font-display); font-weight: 700; font-size: 26px; }
+.horizon { transition: opacity .3s; }
+.horizon.dim { opacity: 0.35; }
+.horizon-edge { fill: none; stroke: var(--gold); stroke-width: 4; stroke-dasharray: 12 9; stroke-linecap: round; }
+.horizon-frame { fill: var(--bark-dark); stroke: var(--gold); stroke-width: 5; }
+.horizon-inset { fill: var(--forest); stroke: var(--sandstone); stroke-width: 2; stroke-dasharray: 5 4; }
+.horizon-kicker { fill: var(--gold); font-family: var(--font-sans); font-size: 11px; font-weight: 900; letter-spacing: 0.12em; }
+.horizon-text { fill: var(--cream); font-family: var(--font-display); font-size: 20px; font-weight: 700; }
+
+.sway { animation: sway 6s ease-in-out infinite; transform-origin: bottom center; transform-box: fill-box; }
+@keyframes sway { 0%,100% { transform: rotate(-1.5deg) } 50% { transform: rotate(1.5deg) } }
+.drift { animation: drift 14s ease-in-out infinite alternate; }
+@keyframes drift { from { transform: translateX(-20px) } to { transform: translateX(20px) } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sway, .drift, .animate-fade-in { animation: none !important; }
+  .chevron-anim { display: none; }
+}

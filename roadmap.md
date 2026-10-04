@@ -1,0 +1,3 @@
+- [x] Add three collision-safe future-horizon markers to the forest map.
+- [x] Remove “finance” from the main-page text box.
+- [x] Verify the updated map and main page.
